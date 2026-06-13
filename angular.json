@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "expense-tracker-angular": {
+    "expense-tracker": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -24,15 +24,7 @@
                 "input": "public"
               }
             ],
-            "styles": ["src/styles.css"],
-            "server": "src/main.server.ts",
-            "outputMode": "server",
-            "security": {
-              "allowedHosts": []
-            },
-            "ssr": {
-              "entry": "src/server.ts"
-            }
+            "styles": ["src/styles.css"]
           },
           "configurations": {
             "production": {
@@ -62,10 +54,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "expense-tracker-angular:build:production"
+              "buildTarget": "expense-tracker:build:production"
             },
             "development": {
-              "buildTarget": "expense-tracker-angular:build:development"
+              "buildTarget": "expense-tracker:build:development"
             }
           },
           "defaultConfiguration": "development"
